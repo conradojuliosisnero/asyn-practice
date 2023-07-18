@@ -51,7 +51,3 @@ const listClients = () => {
 
 console.log(listClients);
 
-// data.forEach((perfil) => {
-// 	const newLine = createNewLine(perfil.name, perfil.email);
-// 	table.appendChild(newLine);
-// });
