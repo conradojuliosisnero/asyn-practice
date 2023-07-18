@@ -31,7 +31,7 @@ const createNewLine = (name, email) => {
 const table = document.querySelector("[data-table]");
 
 const listClients = () => {
-		const promise = new Promise((resolve, rejet) => {
+	const promise = new Promise((resolve, rejet) => {
 		const http = new XMLHttpRequest();
 		http.open("GET", URL);
 
@@ -41,7 +41,7 @@ const listClients = () => {
 			const response = JSON.parse(http.response);
 			if (http.status >= 400) {
 				rejet(response);
-			}else{
+			} else {
 				resolve(response);
 			}
 		};
