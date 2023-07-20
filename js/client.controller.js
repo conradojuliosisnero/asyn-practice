@@ -1,4 +1,4 @@
-import { clientServices } from "../client-service";
+import { servicioClientes } from "../client-service";
 
 //funcion
 const createNewLine = (name, email) => {
@@ -29,7 +29,7 @@ const createNewLine = (name, email) => {
 
 const table = document.querySelector("[data-table]");
 
-clientServices.listClients()
+servicioClientes.listClients()
 	.then((data) => {
 		data.forEach((perfil) => {
 			const newLine = createNewLine(perfil.nombre, perfil.email);
